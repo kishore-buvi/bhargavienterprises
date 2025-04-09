@@ -7,5 +7,6 @@ import 'package:bhargavi_oil_masala/app.dart';
 Future<void>  main() async{
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
-  runApp(GetstartPage());
+  runApp(MaterialApp(home: GetstartPage()));
+}
 }

@@ -8,13 +8,13 @@ class GetstartPage extends StatelessWidget {
     final screenHeight = MediaQuery.of(context).size.height;
     final screenWidth = MediaQuery.of(context).size.width;
 
-    return Scaffold(
+    return  Scaffold(
       body: Stack(
         children: [
           // Background image
           Positioned.fill(
             child: Image.asset(
-              'assets/images/getstart.png',
+              'assets/images/images.jpeg',
               fit: BoxFit.cover,
             ),
           ),
