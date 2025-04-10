@@ -1,3 +1,4 @@
+import 'package:bhargavi_oil_masala/screens/login_page.dart';
 import 'package:flutter/material.dart';
 
 class GetstartPage extends StatelessWidget {
@@ -54,7 +55,7 @@ class GetstartPage extends StatelessWidget {
                   width: double.infinity,
                   child: ElevatedButton(
                     onPressed: () {
-
+                        Navigator.push(context, MaterialPageRoute(builder: (context)=>LoginPage()));
                     },
                     style: ElevatedButton.styleFrom(
                       backgroundColor: Colors.amber[600],
