@@ -1,3 +1,4 @@
+import 'package:bhargavi_oil_masala/screens/homepage.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
@@ -221,15 +222,18 @@ class _LoginPageState extends State<LoginPage> {
                       backgroundColor: buttonColor,
                       padding: const EdgeInsets.symmetric(vertical: 14),
                     ),
-                    onPressed: isLoading
-                        ? null
-                        : () {
-                      if (_formKey.currentState!.validate()) {
-                        isOtpSent
-                            ? _verifyOtpAndLogin()
-                            : _sendOtp();
-                      }
+                    onPressed: (){
+                      Navigator.push(context, MaterialPageRoute(builder: (context)=>HomePage()));
                     },
+                    // onPressed: isLoading
+                    //     ? null
+                    //     : () {
+                    //   if (_formKey.currentState!.validate()) {
+                    //     isOtpSent
+                    //         ? _verifyOtpAndLogin()
+                    //         : _sendOtp();
+                    //   }
+                    // },
                     child: Text(
                       isLoading
                           ? 'Please wait...'
