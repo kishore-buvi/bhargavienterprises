@@ -10,7 +10,7 @@ class PrivacyPolicyScreen extends StatelessWidget {
       body: SafeArea(
         child: Column(
           children: [
-            // Custom AppBar
+
             Container(
               color: const Color(0xffE4F5DE),
               padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
