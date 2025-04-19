@@ -1,4 +1,3 @@
-import 'package:bhargavi_oil_masala/screens/login_page.dart';
 import 'package:flutter/material.dart';
 
 class GetstartPage extends StatelessWidget {
@@ -9,13 +8,13 @@ class GetstartPage extends StatelessWidget {
     final screenHeight = MediaQuery.of(context).size.height;
     final screenWidth = MediaQuery.of(context).size.width;
 
-    return Scaffold(
+    return  Scaffold(
       body: Stack(
         children: [
           // Background image
           Positioned.fill(
             child: Image.asset(
-              'assets/images/getstart.png',
+              'assets/images/images.jpeg',
               fit: BoxFit.cover,
             ),
           ),
@@ -55,7 +54,7 @@ class GetstartPage extends StatelessWidget {
                   width: double.infinity,
                   child: ElevatedButton(
                     onPressed: () {
-                        Navigator.push(context, MaterialPageRoute(builder: (context)=>LoginPage()));
+
                     },
                     style: ElevatedButton.styleFrom(
                       backgroundColor: Colors.amber[600],
